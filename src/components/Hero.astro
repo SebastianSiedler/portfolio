@@ -1,7 +1,9 @@
 ---
-import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import type { Lang } from '../i18n';
 import { getTranslations } from '../i18n';
+import IconGitHub from './icons/IconGitHub.astro';
+import IconLinkedIn from './icons/IconLinkedIn.astro';
 
 interface Props {
   lang: Lang;
@@ -39,7 +41,7 @@ const t = getTranslations(lang);
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-700 dark:hover:bg-gray-100 transition-colors"
           >
-            <Github size={16} />
+            <IconGitHub size={16} />
             GitHub
           </a>
           <a
@@ -48,7 +50,7 @@ const t = getTranslations(lang);
             rel="noopener noreferrer"
             class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
           >
-            <Linkedin size={16} />
+            <IconLinkedIn size={16} />
             LinkedIn
           </a>
           <a
