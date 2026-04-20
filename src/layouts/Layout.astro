@@ -11,6 +11,48 @@ interface Props {
 }
 
 const { lang, title, description } = Astro.props;
+
+const SITE_URL = 'https://sebastiansiedler.com';
+const canonical = lang === 'de' ? `${SITE_URL}/de/` : `${SITE_URL}/`;
+const ogImage = `${SITE_URL}/assets/headshot.png`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Sebastian Siedler',
+  jobTitle: 'Software Engineer',
+  url: SITE_URL,
+  image: ogImage,
+  description:
+    'Software engineer and Fulbright grantee pursuing an MS in Computer Science at Florida Polytechnic University. Researcher in software metrics and mobile security.',
+  sameAs: [
+    'https://www.linkedin.com/in/sebastian-siedler-b6b822191',
+    'https://github.com/SebastianSiedler',
+    'https://2026.msrconf.org/profile/sebastiansiedler',
+    'https://conf.researchr.org/profile/forge-2026/sebastiansiedler',
+  ],
+  alumniOf: [
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'Florida Polytechnic University',
+      url: 'https://floridapoly.edu/',
+    },
+    {
+      '@type': 'CollegeOrUniversity',
+      name: 'Technical University of Applied Sciences Würzburg-Schweinfurt',
+      url: 'https://fiw.thws.de/',
+    },
+  ],
+  knowsAbout: [
+    'Software Engineering',
+    'Web Development',
+    'Mobile Security',
+    'Software Metrics',
+    'TypeScript',
+    'Vue.js',
+    'React',
+  ],
+};
 ---
 
 <!doctype html>
@@ -20,7 +62,36 @@ const { lang, title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={`${SITE_URL}/`} />
+    <link rel="alternate" hreflang="de" href={`${SITE_URL}/de/`} />
+    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image:alt" content="Sebastian Siedler" />
+    <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_US'} />
+    <meta property="profile:first_name" content="Sebastian" />
+    <meta property="profile:last_name" content="Siedler" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- JSON-LD structured data -->
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
     <script is:inline>
       const theme = localStorage.getItem('theme');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
