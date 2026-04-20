@@ -48,6 +48,6 @@ export const en = {
     switchTo: 'DE',
     switchHref: '/de',
   },
-} as const;
+};
 
 export type Translations = typeof en;
