@@ -1,0 +1,74 @@
+---
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import type { Lang } from '../i18n';
+import { getTranslations } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+---
+
+<section class="py-24 sm:py-32">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col-reverse gap-10 md:flex-row md:items-center md:gap-16">
+      <!-- Text -->
+      <div class="flex-1">
+        <div class="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 mb-4">
+          <MapPin size={14} />
+          <span>{t.hero.location}</span>
+        </div>
+        <h1
+          class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl mb-2"
+        >
+          Sebastian Siedler
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-400 mb-6">
+          {t.hero.tagline}
+        </p>
+        <p class="text-base text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-xl">
+          {t.hero.bio}
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://github.com/SebastianSiedler"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-700 dark:hover:bg-gray-100 transition-colors"
+          >
+            <Github size={16} />
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sebastian-siedler-b6b822191/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
+          >
+            <Linkedin size={16} />
+            LinkedIn
+          </a>
+          <a
+            href="mailto:contact@sebastiansiedler.com"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-md border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors"
+          >
+            <Mail size={16} />
+            {t.contact.email}
+          </a>
+        </div>
+      </div>
+
+      <!-- Headshot -->
+      <div class="flex md:justify-end">
+        <img
+          src="/assets/headshot.png"
+          alt="Sebastian Siedler"
+          class="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover object-top border-4 border-gray-100 dark:border-gray-800 shadow-sm"
+        />
+      </div>
+    </div>
+  </div>
+</section>

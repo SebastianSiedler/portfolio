@@ -2,6 +2,7 @@ Sebastian Siedler
 https://sebastiansiedler.com/
 https://github.com/SebastianSiedler
 https://www.linkedin.com/in/sebastian-siedler-b6b822191/
+contact@sebastiansiedler.com
 Munich, Germany
 
 ## Education
