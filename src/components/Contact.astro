@@ -1,0 +1,87 @@
+---
+import { Mail, MapPin } from 'lucide-react';
+import type { Lang } from '../i18n';
+import { getTranslations } from '../i18n';
+import IconGitHub from './icons/IconGitHub.astro';
+import IconLinkedIn from './icons/IconLinkedIn.astro';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+---
+
+<section id="contact" class="py-16 sm:py-24 bg-gray-50 dark:bg-gray-900/40">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-3">
+      {t.contact.heading}
+    </h2>
+    <p class="text-gray-600 dark:text-gray-400 mb-10 max-w-md">
+      {t.contact.description}
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-fit max-w-full">
+      <a
+        href="mailto:contact@sebastiansiedler.com"
+        class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 hover:bg-white dark:hover:bg-gray-900 transition-all group"
+      >
+        <Mail
+          size={18}
+          className="text-gray-500 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors shrink-0"
+        />
+        <div class="min-w-0">
+          <p class="text-xs text-gray-400 dark:text-gray-500">{t.contact.email}</p>
+          <p class="text-sm font-medium text-gray-900 dark:text-gray-100 truncate">
+            contact@sebastiansiedler.com
+          </p>
+        </div>
+      </a>
+
+      <a
+        href="https://github.com/SebastianSiedler"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 hover:bg-white dark:hover:bg-gray-900 transition-all group"
+      >
+        <IconGitHub
+          size={18}
+          class="text-gray-500 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors shrink-0"
+        />
+        <div>
+          <p class="text-xs text-gray-400 dark:text-gray-500">{t.contact.github}</p>
+          <p class="text-sm font-medium text-gray-900 dark:text-gray-100">SebastianSiedler</p>
+        </div>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/sebastian-siedler-b6b822191/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 hover:bg-white dark:hover:bg-gray-900 transition-all group"
+      >
+        <IconLinkedIn
+          size={18}
+          class="text-gray-500 group-hover:text-gray-900 dark:group-hover:text-gray-100 transition-colors shrink-0"
+        />
+        <div>
+          <p class="text-xs text-gray-400 dark:text-gray-500">{t.contact.linkedin}</p>
+          <p class="text-sm font-medium text-gray-900 dark:text-gray-100">Sebastian Siedler</p>
+        </div>
+      </a>
+
+      <div
+        class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 dark:border-gray-800"
+      >
+        <MapPin size={18} className="text-gray-500 shrink-0" />
+        <div>
+          <p class="text-xs text-gray-400 dark:text-gray-500">{t.contact.location}</p>
+          <p class="text-sm font-medium text-gray-900 dark:text-gray-100">
+            {t.contact.locationValue}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

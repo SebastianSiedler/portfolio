@@ -1,0 +1,19 @@
+---
+import type { Lang } from '../i18n';
+import { getTranslations } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = getTranslations(lang);
+---
+
+<footer class="border-t border-gray-200 dark:border-gray-800 py-8">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+    <p class="text-center text-sm text-gray-400 dark:text-gray-600">
+      {t.footer.rights}
+    </p>
+  </div>
+</footer>
