@@ -63,7 +63,12 @@ const jsonLd = {
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="alternate" hreflang="en" href={`${SITE_URL}/`} />
+    <link rel="alternate" hreflang="de" href={`${SITE_URL}/de/`} />
+    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" />
 
     <!-- OpenGraph -->
     <meta property="og:type" content="profile" />
@@ -71,6 +76,9 @@ const jsonLd = {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image:alt" content="Sebastian Siedler" />
     <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_US'} />
     <meta property="profile:first_name" content="Sebastian" />
     <meta property="profile:last_name" content="Siedler" />

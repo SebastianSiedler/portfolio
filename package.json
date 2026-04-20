@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.0.0",
+    "@astrojs/sitemap": "^3.7.2",
     "@base-ui/react": "^1.0.0",
     "astro": "^5.0.0",
     "clsx": "^2.1.0",
