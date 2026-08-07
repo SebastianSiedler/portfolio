@@ -13,9 +13,9 @@ export const de: Translations = {
     contact: 'Kontakt',
   },
   hero: {
-    tagline: 'Softwareentwickler & Fulbright-Stipendiat',
+    tagline: 'Fullstack-Entwickler & Fulbright-Stipendiat',
     location: 'München, Deutschland',
-    bio: 'Softwareentwickler und Fulbright-Stipendiat, derzeit im Master-Studium der Informatik an der Florida Polytechnic University. Ich entwickle Webanwendungen und forsche an der Schnittstelle von Software-Metriken und mobiler Sicherheit. Zuvor tätig in der Automobilsoftware bei ZF Friedrichshafen, im Bereich Enterprise-KI bei vAudience sowie in datengetriebenen Frontend-Systemen bei Prognostica.',
+    bio: 'Fullstack-Entwickler und Fulbright-Stipendiat mit einem Master-Abschluss in Informatik von der Florida Polytechnic University (GPA 3,9/4,0). Aktuell tätig als Junior Software Engineer bei CHECK24. Zuvor forschte ich an der Schnittstelle von Software-Metriken und mobiler Sicherheit – mit zwei veröffentlichten Konferenzpapieren bei FORGE 2026 und MSR 2026.',
   },
   sections: {
     experience: 'Berufserfahrung',
@@ -27,7 +27,7 @@ export const de: Translations = {
     present: 'Heute',
   },
   research: {
-    submitted: 'Eingereicht',
+    submitted: 'Veröffentlicht',
     viewPaper: 'Paper ansehen',
   },
   contact: {

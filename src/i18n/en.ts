@@ -11,9 +11,9 @@ export const en = {
     contact: 'Contact',
   },
   hero: {
-    tagline: 'Software Engineer & Fulbright Grantee',
+    tagline: 'Fullstack Developer & Fulbright Grantee',
     location: 'Munich, Germany',
-    bio: 'Software engineer and Fulbright grantee pursuing an MS in Computer Science at Florida Polytechnic University. I build web applications and conduct research at the intersection of software metrics and mobile security. Previously worked on automotive software at ZF Friedrichshafen, enterprise AI tooling at vAudience, and data-driven frontend systems at Prognostica.',
+    bio: 'Fullstack developer and Fulbright grantee with an MS in Computer Science from Florida Polytechnic University (GPA 3.9/4.0). Currently working as Junior Software Engineer at CHECK24. Previously conducted research at the intersection of software metrics and mobile security, with two published conference papers at FORGE 2026 and MSR 2026.',
   },
   sections: {
     experience: 'Experience',
@@ -25,7 +25,7 @@ export const en = {
     present: 'Present',
   },
   research: {
-    submitted: 'Submitted',
+    submitted: 'Published',
     viewPaper: 'View Paper',
   },
   contact: {
