@@ -4,7 +4,7 @@ Personal portfolio website for [Sebastian Siedler](https://sebastiansiedler.com)
 
 ## Stack
 
-- [Astro 5](https://astro.build) — static site framework
+- [Astro 7](https://astro.build) — static site framework
 - [React 19](https://react.dev) — interactive islands
 - [Tailwind CSS v4](https://tailwindcss.com) — styling
 - [Base UI](https://base-ui.com) — accessible headless components
