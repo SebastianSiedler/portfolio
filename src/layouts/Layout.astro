@@ -20,11 +20,11 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Sebastian Siedler",
-  jobTitle: "Software Engineer",
+  jobTitle: "Fullstack Developer",
   url: SITE_URL,
   image: ogImage,
   description:
-    "Software engineer and Fulbright grantee pursuing an MS in Computer Science at Florida Polytechnic University. Researcher in software metrics and mobile security.",
+    "Fullstack developer and Fulbright grantee with an MS in Computer Science from Florida Polytechnic University. Previously conducted research in software metrics and mobile security with two published conference papers.",
   sameAs: [
     "https://www.linkedin.com/in/sebastian-siedler-b6b822191",
     "https://github.com/SebastianSiedler",
@@ -72,14 +72,17 @@ const jsonLd = {
 
     <!-- OpenGraph -->
     <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Sebastian Siedler" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="800" />
     <meta property="og:image:alt" content="Sebastian Siedler" />
     <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_US'} />
+    <meta property="og:locale:alternate" content={lang === 'de' ? 'en_US' : 'de_DE'} />
     <meta property="profile:first_name" content="Sebastian" />
     <meta property="profile:last_name" content="Siedler" />
 
@@ -88,6 +91,7 @@ const jsonLd = {
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content="Sebastian Siedler" />
 
     <!-- JSON-LD structured data -->
     <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
