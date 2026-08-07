@@ -53,6 +53,13 @@ const jsonLd = {
     "React",
   ],
 };
+
+const jsonLdWebsite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Sebastian Siedler",
+  url: SITE_URL,
+};
 ---
 
 <!doctype html>
@@ -93,8 +100,11 @@ const jsonLd = {
     <meta name="twitter:image" content={ogImage} />
     <meta name="twitter:image:alt" content="Sebastian Siedler" />
 
-    <!-- JSON-LD structured data -->
+    <!-- JSON-LD: Person -->
     <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    <!-- JSON-LD: WebSite (site name for Google Search) -->
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLdWebsite)} />
 
     <script is:inline>
       const theme = localStorage.getItem('theme');
