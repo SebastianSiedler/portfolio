@@ -20,9 +20,7 @@ export const experience: Experience[] = [
     position: "Junior Software Engineer",
     startDate: "2026-08",
     endDate: null,
-    highlights: [
-      "Working in the AI Forge Vertical, developing AI-powered software solutions.",
-    ],
+    highlights: ["Working in the AI Forge Vertical, developing AI-powered software solutions."],
   },
   {
     id: "flpoly-gra",

@@ -1,7 +1,7 @@
 ---
-import type { Lang } from '../i18n';
-import { getTranslations } from '../i18n';
-import ThemeToggle from './ThemeToggle';
+import type { Lang } from "../i18n";
+import { getTranslations } from "../i18n";
+import ThemeToggle from "./ThemeToggle";
 
 interface Props {
   lang: Lang;
@@ -9,7 +9,7 @@ interface Props {
 
 const { lang } = Astro.props;
 const t = getTranslations(lang);
-const homeHref = lang === 'de' ? '/de' : '/';
+const homeHref = lang === "de" ? "/de" : "/";
 ---
 
 <header

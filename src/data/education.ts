@@ -23,16 +23,11 @@ export const education: Education[] = [
     startDate: "2025-08",
     endDate: "2026-06",
     location: "Lakeland, FL",
-    honors: [
-      "Fulbright Grantee",
-      "Graduate Research Assistant",
-      "GPA 3.9 / 4.0",
-    ],
+    honors: ["Fulbright Grantee", "Graduate Research Assistant", "GPA 3.9 / 4.0"],
   },
   {
     id: "thws",
-    institution:
-      "Technical University of Applied Sciences Würzburg-Schweinfurt",
+    institution: "Technical University of Applied Sciences Würzburg-Schweinfurt",
     url: "https://fiw.thws.de/",
     logo: "/assets/logos/thws_logo.png",
     area: "Computer Science",
@@ -40,10 +35,7 @@ export const education: Education[] = [
     startDate: "2021-10",
     endDate: "2025-03",
     location: "Würzburg, Germany",
-    honors: [
-      "Grade 1.4",
-      "3rd Place - Prof. Wolfgang Maria Fischer Prize (Jun 2026)",
-    ],
+    honors: ["Grade 1.4", "3rd Place - Prof. Wolfgang Maria Fischer Prize (Jun 2026)"],
     highlights: [
       "Thesis: Analysis and Development of an Alternative OPC-UA Interface for MES Machine Integration",
       "Member of the Student Council (Fachschaft)",
@@ -60,9 +52,7 @@ export const education: Education[] = [
     startDate: "2017-08",
     endDate: "2020-07",
     location: "Grafenrheinfeld, Germany",
-    honors: [
-      "Outstanding Performance in Final Examination — 1st Place (Kammersieger)",
-    ],
+    honors: ["Outstanding Performance in Final Examination — 1st Place (Kammersieger)"],
     highlights: ["Vocational school: Heinrich-Thein-Schule Haßfurt"],
   },
 ];

@@ -1,8 +1,8 @@
 ---
-import '../styles/globals.css';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import type { Lang } from '../i18n';
+import "../styles/globals.css";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import type { Lang } from "../i18n";
 
 interface Props {
   lang: Lang;
@@ -12,45 +12,45 @@ interface Props {
 
 const { lang, title, description } = Astro.props;
 
-const SITE_URL = 'https://sebastiansiedler.com';
-const canonical = lang === 'de' ? `${SITE_URL}/de/` : `${SITE_URL}/`;
+const SITE_URL = "https://sebastiansiedler.com";
+const canonical = lang === "de" ? `${SITE_URL}/de/` : `${SITE_URL}/`;
 const ogImage = `${SITE_URL}/assets/headshot.png`;
 
 const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Sebastian Siedler',
-  jobTitle: 'Software Engineer',
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sebastian Siedler",
+  jobTitle: "Software Engineer",
   url: SITE_URL,
   image: ogImage,
   description:
-    'Software engineer and Fulbright grantee pursuing an MS in Computer Science at Florida Polytechnic University. Researcher in software metrics and mobile security.',
+    "Software engineer and Fulbright grantee pursuing an MS in Computer Science at Florida Polytechnic University. Researcher in software metrics and mobile security.",
   sameAs: [
-    'https://www.linkedin.com/in/sebastian-siedler-b6b822191',
-    'https://github.com/SebastianSiedler',
-    'https://2026.msrconf.org/profile/sebastiansiedler',
-    'https://conf.researchr.org/profile/forge-2026/sebastiansiedler',
+    "https://www.linkedin.com/in/sebastian-siedler-b6b822191",
+    "https://github.com/SebastianSiedler",
+    "https://2026.msrconf.org/profile/sebastiansiedler",
+    "https://conf.researchr.org/profile/forge-2026/sebastiansiedler",
   ],
   alumniOf: [
     {
-      '@type': 'CollegeOrUniversity',
-      name: 'Florida Polytechnic University',
-      url: 'https://floridapoly.edu/',
+      "@type": "CollegeOrUniversity",
+      name: "Florida Polytechnic University",
+      url: "https://floridapoly.edu/",
     },
     {
-      '@type': 'CollegeOrUniversity',
-      name: 'Technical University of Applied Sciences Würzburg-Schweinfurt',
-      url: 'https://fiw.thws.de/',
+      "@type": "CollegeOrUniversity",
+      name: "Technical University of Applied Sciences Würzburg-Schweinfurt",
+      url: "https://fiw.thws.de/",
     },
   ],
   knowsAbout: [
-    'Software Engineering',
-    'Web Development',
-    'Mobile Security',
-    'Software Metrics',
-    'TypeScript',
-    'Vue.js',
-    'React',
+    "Software Engineering",
+    "Web Development",
+    "Mobile Security",
+    "Software Metrics",
+    "TypeScript",
+    "Vue.js",
+    "React",
   ],
 };
 ---

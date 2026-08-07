@@ -1,7 +1,7 @@
-import { Tooltip } from '@base-ui/react/tooltip';
-import { Moon, Sun } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { cn } from '../lib/utils';
+import { Tooltip } from "@base-ui/react/tooltip";
+import { Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
+import { cn } from "../lib/utils";
 
 interface ThemeToggleProps {
   toggleDark: string;
@@ -12,14 +12,14 @@ export default function ThemeToggle({ toggleDark, toggleLight }: ThemeToggleProp
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    setIsDark(document.documentElement.classList.contains('dark'));
+    setIsDark(document.documentElement.classList.contains("dark"));
   }, []);
 
   function toggle() {
     const next = !isDark;
     setIsDark(next);
-    document.documentElement.classList.toggle('dark', next);
-    localStorage.setItem('theme', next ? 'dark' : 'light');
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
   }
 
   const label = isDark ? toggleLight : toggleDark;
@@ -31,11 +31,11 @@ export default function ThemeToggle({ toggleDark, toggleLight }: ThemeToggleProp
           onClick={toggle}
           aria-label={label}
           className={cn(
-            'inline-flex items-center justify-center w-9 h-9 rounded-md cursor-pointer',
-            'border border-gray-200 dark:border-gray-700',
-            'text-gray-600 dark:text-gray-400',
-            'hover:bg-gray-100 dark:hover:bg-gray-800',
-            'transition-colors',
+            "inline-flex items-center justify-center w-9 h-9 rounded-md cursor-pointer",
+            "border border-gray-200 dark:border-gray-700",
+            "text-gray-600 dark:text-gray-400",
+            "hover:bg-gray-100 dark:hover:bg-gray-800",
+            "transition-colors",
           )}
         >
           {isDark ? <Sun size={16} /> : <Moon size={16} />}
