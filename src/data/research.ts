@@ -9,6 +9,14 @@ export interface Paper {
 
 export const research: Paper[] = [
   {
+    id: "wearable-security",
+    title: "Security Risks in Wearable Mobile Applications",
+    conference: "IEEE Internet Computing",
+    url: "https://www.computer.org/csdl/magazine/ic",
+    year: 2026,
+    published: false,
+  },
+  {
     id: "mirror",
     title: "MIRROR: A Dataset of Structural Metrics for Repackaged Android Apps",
     conference: "FORGE 2026",
