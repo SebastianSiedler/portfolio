@@ -13,7 +13,7 @@
     "check": "biome check src/ --write"
   },
   "dependencies": {
-    "@astrojs/react": "^6.0.2",
+    "@astrojs/react": "^7.0.0",
     "@astrojs/sitemap": "^3.7.4",
     "@base-ui/react": "^1.8.0",
     "astro": "^7.3.4",
