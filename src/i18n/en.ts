@@ -48,6 +48,12 @@ export const en = {
     switchTo: "DE",
     switchHref: "/de",
   },
+  notFound: {
+    title: "404: Page Not Found – Sebastian Siedler",
+    heading: "Page not found",
+    description: "Sorry, the page you are looking for doesn't exist or has been moved.",
+    backHome: "Back to Home",
+  },
 };
 
 export type Translations = typeof en;

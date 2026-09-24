@@ -50,4 +50,10 @@ export const de: Translations = {
     switchTo: "EN",
     switchHref: "/",
   },
+  notFound: {
+    title: "404: Seite nicht gefunden – Sebastian Siedler",
+    heading: "Seite nicht gefunden",
+    description: "Entschuldigung, die gesuchte Seite existiert nicht oder wurde verschoben.",
+    backHome: "Zur Startseite",
+  },
 };
