@@ -43,7 +43,7 @@ export const experience: Experience[] = [
     url: "https://www.vaudience.ai/",
     logo: "/assets/logos/vaudience_logo.png",
     location: "Würzburg, Germany",
-    position: "Software Developer",
+    position: "Working Student – Software Development",
     startDate: "2025-04",
     endDate: "2025-08",
     highlights: [
@@ -70,7 +70,7 @@ export const experience: Experience[] = [
     url: "https://www.prognostica.de/de/",
     logo: "/assets/logos/prognostica_logo.png",
     location: "Würzburg, Germany",
-    position: "Software Developer (Frontend)",
+    position: "Working Student – Frontend Development",
     startDate: "2022-10",
     endDate: "2023-08",
     highlights: [

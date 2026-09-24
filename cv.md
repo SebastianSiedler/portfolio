@@ -29,7 +29,7 @@ Munich, Germany
   honors:
   - "Grade: 1.4"
   - "3rd Place – Professor Wolfgang Maria Fischer Prize (Jun 2026)"
-  highlights:
+    highlights:
 
   - "_Thesis_: Analysis and Development of an Alternative OPC-UA Interface for MES Machine Integration"
   - "_Activities_: Member of the Student Council (Fachschaft)"
@@ -50,7 +50,6 @@ Munich, Germany
 - organization: CHECK24
   url: https://www.check24.de/
   location: Munich, Germany
-
   - position: Junior Software Engineer
     startDate: 2026-08-01
     highlights:
@@ -59,7 +58,6 @@ Munich, Germany
 - organization: Florida Polytechnic University
   url: https://floridapoly.edu/
   location: Lakeland, FL
-
   - position: Graduate Research Assistant
     startDate: 2025-08-15
     endDate: 2026-06-26
@@ -74,8 +72,7 @@ Munich, Germany
   url: https://www.vaudience.ai/
   location: Würzburg, Germany
   positions:
-
-  - position: Software Developer
+  - position: Working Student – Software Development
     startDate: 2025-04-01
     endDate: 2025-08-01
     highlights:
@@ -96,7 +93,7 @@ Munich, Germany
   url: https://www.prognostica.de/de/
   location: Würzburg, Germany
   positions:
-  - position: Software Developer (Frontend)
+  - position: Working Student – Software Development
     startDate: 2022-10-01
     endDate: 2023-08-30
     highlights:
