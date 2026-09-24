@@ -34,9 +34,11 @@ Personal portfolio website for Sebastian Siedler. Built with Astro, React, Tailw
 ## Commands
 
 ```bash
-pnpm dev       # start dev server at localhost:4321
-pnpm build     # build to dist/
-pnpm preview   # preview dist/ locally
+pnpm dev          # start dev server at localhost:4321
+pnpm build        # build to dist/
+pnpm preview      # preview dist/ locally via Astro
+pnpm preview:cf   # preview dist/ locally via Cloudflare Workers edge runtime (wrangler dev)
+pnpm deploy       # build and deploy to Cloudflare Workers Static Assets
 ```
 
 ## Key Conventions
@@ -50,4 +52,4 @@ pnpm preview   # preview dist/ locally
 
 ## Deployment
 
-Cloudflare Pages. Build command: `pnpm build`. Output directory: `dist/`. No server-side logic — fully static.
+Cloudflare Workers with Static Assets. Configuration is in `wrangler.jsonc`. Custom domains (`sebastiansiedler.com`, `www.sebastiansiedler.com`) are routed as code. Build output: `dist/`. Deploy via `pnpm deploy` or CI.

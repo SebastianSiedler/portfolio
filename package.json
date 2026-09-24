@@ -6,6 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "preview:cf": "wrangler dev",
+    "deploy": "pnpm build && wrangler deploy",
     "lint": "biome check src/",
     "format": "biome format src/ --write",
     "check": "biome check src/ --write"
@@ -28,6 +30,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "tailwindcss": "^4.3.3",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "wrangler": "^4.137.0"
   }
 }
