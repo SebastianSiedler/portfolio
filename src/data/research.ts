@@ -12,13 +12,14 @@ export const research: Paper[] = [
     id: "wearable-security",
     title: "Security Risks in Wearable Mobile Applications",
     conference: "IEEE Internet Computing",
-    url: "https://www.computer.org/csdl/magazine/ic",
+    url: "https://ieeexplore.ieee.org/document/11690863",
     year: 2026,
-    published: false,
+    published: true,
   },
   {
     id: "mirror",
-    title: "MIRROR: A Dataset of Structural Metrics for Repackaged Android Apps",
+    title:
+      "MIRROR: A Dataset of Structural Metrics for Repackaged Android Apps",
     conference: "FORGE 2026",
     url: "https://dl.acm.org/doi/full/10.1145/3793655.3793713",
     year: 2026,
